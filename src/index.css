@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" !important;
+}
+
+.reset-spacing-btn {
+  padding: 0;
+  height: initial !important;
+}
