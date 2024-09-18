@@ -138,6 +138,7 @@ export const authSlice = createSlice({
       })
       .addCase(register.rejected, (state, action: any) => {
         state.isLoading = false;
+        state.isError = true;
         state.message = action.payload;
       })
       .addCase(login.pending, (state) => {

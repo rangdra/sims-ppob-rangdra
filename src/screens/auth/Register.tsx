@@ -43,12 +43,6 @@ export default function Register() {
     dispatch(reset());
   }, [dispatch, isError, isSuccess]);
 
-  useEffect(() => {
-    return () => {
-      dispatch(reset());
-    };
-  }, [dispatch]);
-
   const handleSubmit = async () => {
     try {
       await form.validateFields();
