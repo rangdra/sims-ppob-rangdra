@@ -23,7 +23,7 @@ export default function Profile({ isEdit }: { isEdit?: boolean }) {
         console.log("file::", file);
         const isLimitSize = isImageMoreThanXKB(info.file, 100);
         if (isLimitSize) {
-          message.error(`File must smaller than ${100}Kb!`);
+          message.error(`Ukuran maksimal file adalah ${100}Kb!`);
           return;
         }
 

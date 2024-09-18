@@ -95,6 +95,7 @@ export default function Topup() {
                       name="nominal"
                     >
                       <InputNumberCustom
+                        min={0}
                         prefix={
                           <MdOutlineMoney
                             style={{
